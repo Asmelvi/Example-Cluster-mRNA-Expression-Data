@@ -13,7 +13,7 @@ import sys
 
 np.set_printoptions(threshold=np.inf, precision=2)
 
-infile = open("C:/Users/Avalon/Desktop/Cluster mRNA/lymphoma.res", 'r')
+infile = open("PATH.res", 'r')
 
 #################### PART 1
 
@@ -89,7 +89,7 @@ for i in fcluster_row:
 counter_row=-3
 
 #WE HAVE TO OPEN THE FILE AGAIN SINCE WE ALREADY REACHED THE BOTTON OF THE FILE AND IT WILL NOT RE-READ IT AGAIN
-infile = open("C:/Users/Avalon/Desktop/Cluster mRNA/lymphoma.res",'r')
+infile = open("PATH.res",'r')
 
 list_of_descriptions = []
 for line2 in infile:
@@ -113,7 +113,7 @@ for i in fcluster_col:
     count2+=1
 
 #WE HAVE TO OPEN THE FILE AGAIN SINCE WE ALREADY REACHED THE BOTTON OF THE FILE AND IT WILL NOT RE-READ IT AGAIN
-infile = open("C:/Users/Avalon/Desktop/Cluster mRNA/lymphoma.res", 'r')
+infile = open("PATH.res", 'r')
 counter_col = 0
 list_of_strains = []
 strain_names = infile.readlines()[0].split('\t')
@@ -152,7 +152,7 @@ for i in fcluster_row:
     count+=1
 
 #WE HAVE TO OPEN THE FILE AGAIN SINCE WE ALREADY REACHED THE BOTTON OF THE FILE AND IT WILL NOT RE-READ IT AGAIN
-infile = open("C:/Users/Avalon/Desktop/Cluster mRNA/lymphoma.res",'r')
+infile = open("PATH.res",'r')
 
 list_of_descriptions = []
 counter_row=-3
@@ -188,7 +188,7 @@ for i in fcluster_col:
     count+=1
 
 #WE HAVE TO OPEN THE FILE AGAIN SINCE WE ALREADY REACHED THE BOTTON OF THE FILE AND IT WILL NOT RE-READ IT AGAIN
-infile = open("C:/Users/Avalon/Desktop/Cluster mRNA/lymphoma.res", 'r')
+infile = open("PATH.res", 'r')
 counter_col = -2
 list_of_strains = []
 strain_names = infile.readlines()[0].split('\t')
